@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://duolk.gitee.io/"/>
-  <updated>2019-03-22T05:02:22.180Z</updated>
+  <updated>2019-03-23T07:09:44.586Z</updated>
   <id>https://duolk.gitee.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>test</title>
+    <link href="https://duolk.gitee.io/2019/03/23/test/"/>
+    <id>https://duolk.gitee.io/2019/03/23/test/</id>
+    <published>2019-03-23T07:05:32.000Z</published>
+    <updated>2019-03-23T07:09:44.586Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;img src=&quot;/2019/03/23/test/IMG_0550.JPG&quot; title=&quot;图片&quot;&gt;
+      
+    
+    </summary>
+    
+      <category term="测试类别" scheme="https://duolk.gitee.io/categories/%E6%B5%8B%E8%AF%95%E7%B1%BB%E5%88%AB/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>《CSAPP阅读笔记一》</title>
     <link href="https://duolk.gitee.io/2019/03/22/%E3%80%8ACSAPP%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0%E4%B8%80%E3%80%8B/"/>
     <id>https://duolk.gitee.io/2019/03/22/《CSAPP阅读笔记一》/</id>
     <published>2019-03-22T04:56:11.000Z</published>
-    <updated>2019-03-22T05:02:22.180Z</updated>
+    <updated>2019-03-22T14:09:31.412Z</updated>
     
     <summary type="html">
     

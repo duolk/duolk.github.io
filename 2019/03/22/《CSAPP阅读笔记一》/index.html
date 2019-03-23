@@ -111,7 +111,7 @@
 <meta property="og:site_name" content="朝花夕拾">
 <meta property="og:description" content="《深入理解计算机系统》读书系列 第一章：计算机系统漫游  hello world 程序运行时，系统发生了什么。  程序由源文件开始，源文件由字节组成文本文件。文件分为ASCII表示的文本文件和二进制文件。 hello.c 经过预处理器（cpp）处理得到hello.i：  根据#开头的命令，将引入的程序插入helloc.i 经过编译器（ccl）翻译成汇编程序hello.s： 不同高级语言对于汇编是相">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-22T05:02:22.180Z">
+<meta property="og:updated_time" content="2019-03-22T14:09:31.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《CSAPP阅读笔记一》">
 <meta name="twitter:description" content="《深入理解计算机系统》读书系列 第一章：计算机系统漫游  hello world 程序运行时，系统发生了什么。  程序由源文件开始，源文件由字节组成文本文件。文件分为ASCII表示的文本文件和二进制文件。 hello.c 经过预处理器（cpp）处理得到hello.i：  根据#开头的命令，将引入的程序插入helloc.i 经过编译器（ccl）翻译成汇编程序hello.s： 不同高级语言对于汇编是相">
@@ -401,7 +401,7 @@
                 
               
 
-              <time title="创建时间：2019-03-22 12:56:11 / 修改时间：13:02:22" itemprop="dateCreated datePublished" datetime="2019-03-22T12:56:11+08:00">2019-03-22</time>
+              <time title="创建时间：2019-03-22 12:56:11 / 修改时间：22:09:31" itemprop="dateCreated datePublished" datetime="2019-03-22T12:56:11+08:00">2019-03-22</time>
             
 
             
@@ -482,8 +482,61 @@
 </ul>
 <p>进程：程序看上去好像在独占硬件<br>上下文切换：各进程指令的交错执行</p>
 <p>虚拟地址空间<br>上1/4是操作系统数据与代码<br>从上至下：用户栈，共享库存储器映射区域。运行时堆，读写数据，只读的代码和数据</p>
-<pre><code>未完待续
-</code></pre>
+<p>网络也是一种I/O设备</p>
+<h3 id="第二章：信息的表示与处理"><a href="#第二章：信息的表示与处理" class="headerlink" title="第二章：信息的表示与处理"></a>第二章：信息的表示与处理</h3><p>信息存储中，8位称为一个字节，按字节寻址。</p>
+<p>使用十六进制表示法表示字节（0x00-0xFF）<br>字长和虚拟空间地址大小的关系。 </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">C声明</th>
+<th style="text-align:center">典型地32位机器</th>
+<th style="text-align:center">Compaq Alpha机器</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">char</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:right">short int</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:right">int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:right">long int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:right">char *</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">8</td>
+</tr>
+<tr>
+<td style="text-align:right">float</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">4</td>
+</tr>
+<tr>
+<td style="text-align:right">double</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">8</td>
+</tr>
+</tbody>
+</table>
+<p>大端小端之争<br>字符串无大小端问题</p>
+<p>sizeof(T)返回存储一个类型为T的对象所需要的字节数。</p>
+<p>无符号，有符号，二进制补码</p>
+<p>数字扩展和截断数字</p>
+<p>无符号加法溢出<br>二进制补码加法溢出</p>
+
       
     </div>
 
@@ -532,6 +585,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/23/test/" rel="prev" title="test">
+                test <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -598,7 +655,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -617,7 +674,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -702,7 +761,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#《深入理解计算机系统》读书系列"><span class="nav-number">1.</span> <span class="nav-text">《深入理解计算机系统》读书系列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一章：计算机系统漫游"><span class="nav-number">1.1.</span> <span class="nav-text">第一章：计算机系统漫游</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#执行hello程序"><span class="nav-number">1.1.1.</span> <span class="nav-text">执行hello程序</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#《深入理解计算机系统》读书系列"><span class="nav-number">1.</span> <span class="nav-text">《深入理解计算机系统》读书系列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一章：计算机系统漫游"><span class="nav-number">1.1.</span> <span class="nav-text">第一章：计算机系统漫游</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#执行hello程序"><span class="nav-number">1.1.1.</span> <span class="nav-text">执行hello程序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二章：信息的表示与处理"><span class="nav-number">1.2.</span> <span class="nav-text">第二章：信息的表示与处理</span></a></li></ol></li></ol></div>
             
 
           </div>
