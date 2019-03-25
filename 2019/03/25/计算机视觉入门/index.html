@@ -103,22 +103,18 @@
 
 
 
-  <meta name="description" content="FTP协议协议格式控制连接报文格式控制连接的请求报文内容由FTP命令及参数构成，基本的FTP命令及其格式如下：这些命令是通过控制连接传输的Telnet字符串，其中FTP命令字符串对大小写不敏感（例如，RETR、Retr、retr、ReTr都可以表示retrieve命令），参数字段的所有字符都是ASCII字符，表示NVT-ASCII下的空格，表示NVT-ASCII下的（回车符，换行符），用以表示命令">
-<meta name="keywords" content="计算机网络">
+  <meta name="description" content="计算机视觉基础Pipeline 输入数据（图像） 预处理（Noise reduction; color correction; scaling） selecting areas of interest(face recognition; image cropping) feature extraction(finding facial markers(mouth eyes)) prediction">
+<meta name="keywords" content="计算机视觉,深度学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="FTP协议介绍">
-<meta property="og:url" content="https://duolk.gitee.io/2019/01/27/FTP协议介绍/index.html">
+<meta property="og:title" content="计算机视觉入门(一)">
+<meta property="og:url" content="https://duolk.gitee.io/2019/03/25/计算机视觉入门/index.html">
 <meta property="og:site_name" content="朝花夕拾">
-<meta property="og:description" content="FTP协议协议格式控制连接报文格式控制连接的请求报文内容由FTP命令及参数构成，基本的FTP命令及其格式如下：这些命令是通过控制连接传输的Telnet字符串，其中FTP命令字符串对大小写不敏感（例如，RETR、Retr、retr、ReTr都可以表示retrieve命令），参数字段的所有字符都是ASCII字符，表示NVT-ASCII下的空格，表示NVT-ASCII下的（回车符，换行符），用以表示命令">
+<meta property="og:description" content="计算机视觉基础Pipeline 输入数据（图像） 预处理（Noise reduction; color correction; scaling） selecting areas of interest(face recognition; image cropping) feature extraction(finding facial markers(mouth eyes)) prediction">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://duolk.gitee.io/2019/01/27/FTP协议介绍/1.png">
-<meta property="og:image" content="https://duolk.gitee.io/2019/01/27/FTP协议介绍/2.png">
-<meta property="og:image" content="https://duolk.gitee.io/2019/01/27/FTP协议介绍/3.png">
-<meta property="og:updated_time" content="2019-03-24T09:02:49.851Z">
+<meta property="og:updated_time" content="2019-03-25T12:15:34.034Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FTP协议介绍">
-<meta name="twitter:description" content="FTP协议协议格式控制连接报文格式控制连接的请求报文内容由FTP命令及参数构成，基本的FTP命令及其格式如下：这些命令是通过控制连接传输的Telnet字符串，其中FTP命令字符串对大小写不敏感（例如，RETR、Retr、retr、ReTr都可以表示retrieve命令），参数字段的所有字符都是ASCII字符，表示NVT-ASCII下的空格，表示NVT-ASCII下的（回车符，换行符），用以表示命令">
-<meta name="twitter:image" content="https://duolk.gitee.io/2019/01/27/FTP协议介绍/1.png">
+<meta name="twitter:title" content="计算机视觉入门(一)">
+<meta name="twitter:description" content="计算机视觉基础Pipeline 输入数据（图像） 预处理（Noise reduction; color correction; scaling） selecting areas of interest(face recognition; image cropping) feature extraction(finding facial markers(mouth eyes)) prediction">
 
 
 
@@ -127,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="https://duolk.gitee.io/2019/01/27/FTP协议介绍/">
+  <link rel="canonical" href="https://duolk.gitee.io/2019/03/25/计算机视觉入门/">
 
 
 
@@ -137,7 +133,7 @@
   };
 </script>
 
-  <title>FTP协议介绍 | 朝花夕拾</title>
+  <title>计算机视觉入门(一) | 朝花夕拾</title>
   
 
 
@@ -345,7 +341,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://duolk.gitee.io/2019/01/27/FTP协议介绍/">
+    <link itemprop="mainEntityOfPage" href="https://duolk.gitee.io/2019/03/25/计算机视觉入门/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="风絮">
@@ -362,7 +358,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">FTP协议介绍
+          <h1 class="post-title" itemprop="name headline">计算机视觉入门(一)
 
               
             
@@ -388,24 +384,12 @@
                 
               
 
-              <time title="创建时间：2019-01-27 19:58:00" itemprop="dateCreated datePublished" datetime="2019-01-27T19:58:00+08:00">2019-01-27</time>
+              <time title="创建时间：2019-03-25 20:12:42 / 修改时间：20:15:34" itemprop="dateCreated datePublished" datetime="2019-03-25T20:12:42+08:00">2019-03-25</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-24 17:02:49" itemprop="dateModified" datetime="2019-03-24T17:02:49+08:00">2019-03-24</time>
               
             
           </span>
@@ -422,7 +406,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/知识科普/" itemprop="url" rel="index"><span itemprop="name">知识科普</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/读书笔记/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a></span>
 
                 
                 
@@ -454,52 +438,110 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="FTP协议"><a href="#FTP协议" class="headerlink" title="FTP协议"></a>FTP协议</h1><h2 id="协议格式"><a href="#协议格式" class="headerlink" title="协议格式"></a>协议格式</h2><h3 id="控制连接报文格式"><a href="#控制连接报文格式" class="headerlink" title="控制连接报文格式"></a>控制连接报文格式</h3><p>控制连接的请求报文内容由FTP命令及参数构成，基本的FTP命令及其格式如下：<br><img src="/2019/01/27/FTP协议介绍/1.png" title="请求命令"><br>这些命令是通过控制连接传输的Telnet字符串，其中FTP命令字符串对大小写不敏感（例如，RETR、Retr、retr、ReTr都可以表示retrieve命令），参数字段的所有字符都是ASCII字符，<sp>表示NVT-ASCII下的空格，<crlf>表示NVT-ASCII下的（回车符，换行符），用以表示命令的结尾。</crlf></sp></p>
-<p>进一步，上述命令中的参数字段格式的BNF表示法如下所示：<br><img src="/2019/01/27/FTP协议介绍/2.png" title="参数字段"></p>
-<p>FTP命令根据功能可分为三类：<br>1）    访问控制命令<br>用以指定访问控制标识符。<br>2）    传输参数命令<br>用以更改传输参数的默认值，所有传输参数都具有默认值。<br>3）    FTP服务命令<br>定义文件传输或用户请求的文件系统功能。<br>具体单个指令的功能释义可参见RFC 0959（<a href="https://tools.ietf.org/html/rfc959）。" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc959）。</a></p>
-<p>每个FTP命令都会生成至少一个回复，控制连接的回复报文格式：<br>由三位数字（传输为三个字母数字字符）和一些文本组成。<br>xyz  <sp>  <some-text-information>  <crlf><br>在文本过长超过一行最大值时，会产生多行回复：<br>多行回复的格式是第一行将以确切的所需回复代码开头，紧接着是连字符，“-”（也称为Minus），后跟文本。最后一行将以相同的代码开头，紧接着是Space <sp>，可选的是一些文本，以及Telnet行尾代码。<br>注意：以三个数字和一个Space开头的行应该被一些中性文本（如Space）偏移。<br>例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">123-First line</span><br><span class="line">Second line</span><br><span class="line">  234 A line beginning with numbers</span><br><span class="line">123 The last line</span><br></pre></td></tr></table></figure></sp></crlf></some-text-information></sp></p>
-<p>三位响应码包含了回复报文的足够信息，其分类意义如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">响应码</th>
-<th style="text-align:center">类别</th>
-<th style="text-align:center">意义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1yz</td>
-<td style="text-align:center">肯定初步回复</td>
-<td style="text-align:center">正在启动所要求的行动; 在继续执行新命令之前需要另一个回复。服务器-FTP进程最多可以发送每个命令一个1yz的回复。</td>
-</tr>
-<tr>
-<td style="text-align:center">2yz</td>
-<td style="text-align:center">肯定完成回复</td>
-<td style="text-align:center">请求的操作已成功完成。可以启动新请求。</td>
-</tr>
-<tr>
-<td style="text-align:center">3yz</td>
-<td style="text-align:center">肯定中间回复</td>
-<td style="text-align:center">该命令已被接受，但所请求的行动暂时搁置，等待收到进一步的信息。 用户应发送另一个指定此信息的命令。 此回复用于命令序列组。</td>
-</tr>
-<tr>
-<td style="text-align:center">4yz</td>
-<td style="text-align:center">瞬态拒绝完成回复</td>
-<td style="text-align:center">该命令未被接受且请求的操作未发生，但错误情况是暂时的，可能会再次请求操作。用户应返回命令序列的开头（如果有）。</td>
-</tr>
-<tr>
-<td style="text-align:center">5yz</td>
-<td style="text-align:center">永久拒绝完成回复</td>
-<td style="text-align:center">该命令未被接受，并且未执行所请求的操作。不鼓励用户进程重复确切的请求（以相同的顺序）。</td>
-</tr>
-</tbody>
-</table>
-<p>响应码细化分类的表示意义参见RFC 0959（<a href="https://tools.ietf.org/html/rfc959）。" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc959）。</a></p>
-<h2 id="通讯过程"><a href="#通讯过程" class="headerlink" title="通讯过程"></a>通讯过程</h2><img src="/2019/01/27/FTP协议介绍/3.png" title="FTP模型">
-<p>FTP协议<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Postel, Jon, and Joyce Reynolds. 'Rfc 959: File transfer protocol (ftp).' InterNet Network Working Group (1985).
-">[1]</span></a></sup>的通讯过程由图1中的FTP模型给出，首先由User-PI启动控制连接（控制连接遵循Telnet协议），用户启动时，标准FTP命令由User-PI生成，并通过控制连接传输到服务器进程。标准回复由Server-PI通过控制连接发送给User-PI来响应FTP命令。<br>文件仅通过数据连接传输。控制连接用于传输执行功能的命令，以及对这些命令的回复。数据传输一般有两种模式，分为主动模式和被动模式：<br>主动模式下的FTP客户端首先和FTP服务器的TCP 21端口建立控制连接，通过这个连接发送命令，客户端需要接受数据的时候会在这个通道上发送PORT命令。PORT命令包含了客户端用什么端口接收数据。在传送数据的时候，服务器端通过自己的TCP 20端口连接至客户端的指定端口发送数据。FTP server必须和客户端建立一个新的连接用来传送数据。<br>被动模式在建立控制连接的时候和主动模式很类似，但建立连接后发送的不是PORT命令，而是PASV命令。FTP服务器收到PASV命令后，随机打开一个高端端口（端口号大于1024）并且通知客户端在这个端口上传送数据的请求，客户端连接FTP服务器的这个端口，然后FTP服务器将通过这个端口进行数据的传送，这个时候FTP服务器不再需要建立一个新的和客户端之间的连接。<br>注意在数据连接中，数据的连接可以是任意方向的，并且数据连接在整个控制连接期间，不需要保持一直开启。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Postel, Jon, and Joyce Reynolds. ‘Rfc 959: File transfer protocol (ftp).’ InterNet Network Working Group (1985).<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="计算机视觉"><a href="#计算机视觉" class="headerlink" title="计算机视觉"></a>计算机视觉</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="Pipeline"><a href="#Pipeline" class="headerlink" title="Pipeline"></a>Pipeline</h3><ul>
+<li>输入数据（图像）</li>
+<li>预处理（Noise reduction; color correction; scaling）</li>
+<li>selecting areas of interest(face recognition; image cropping)</li>
+<li>feature extraction(finding facial markers(mouth eyes))</li>
+<li>prediction/recognition(facial expression recognition; emotion prediction)</li>
+</ul>
+<p>一个苹果照片信息：color detail; shape detail; lighting conditions; size based on distance</p>
+<p>像素（pixel）网格构成图片</p>
+<p>像素（0-255），图片原点在左上。</p>
+<p><code>matplotlib.image</code> 读取图像<br><code>cv2</code> 计算机视觉库opencv<br><code>%matplotlib qt</code> 使图像交互式窗口弹出</p>
+<p>灰度图和彩色图</p>
+<h2 id="color-threshold"><a href="#color-threshold" class="headerlink" title="color threshold"></a>color threshold</h2><p>蓝幕，绿幕替换背景<br>OpenCV将彩色图像读取为BGR（蓝绿红）图像<br>图片变换时记得<code>np.copy</code>不会改变原图</p>
+<ul>
+<li>定义分离颜色的上下限（threshold）</li>
+<li>create a mask <code>inRange</code></li>
+<li>删除蓝幕</li>
+<li>添加新背景</li>
+</ul>
+<p>color spaces<br>RGB HSV HLS</p>
+<h2 id="High-pass-filter-高通滤波器"><a href="#High-pass-filter-高通滤波器" class="headerlink" title="High-pass filter(高通滤波器)"></a>High-pass filter(高通滤波器)</h2><p>滤波器</p>
+<ul>
+<li>过滤掉图像中不需要或无关的信息</li>
+<li>放大图像的某些特征，如物体边界或其他显著特征</li>
+</ul>
+<p>高通滤波器</p>
+<ul>
+<li>锐化图像</li>
+<li>强化图像的高频区域（相邻像素强度发生突变的区域）</li>
+</ul>
+<p>过滤器：矩阵形式存在，通常称为卷积核</p>
+<p>高通滤波器的元素一般和为零，否则计算的结果会带有正负权重</p>
+<p>Sobel过滤器可分别检测x和y轴方向的强度突变</p>
+<p>竖直过滤器：</p>
+<p>|-1, 0, 1|<br>|-2, 0, 2|<br>|-1, 0, 1|</p>
+<p><code>cv2.filter2D()</code>实施核卷积操作</p>
+<p>二值图像： 纯粹的黑白图像</p>
+<p><code>cv2.threshold()</code> 设置上下限分离图像</p>
+<p>常见的噪声有噪点和模糊的细节，高通过滤器会强化图像里的这些噪声</p>
+<h2 id="Low-pass-filters-低通滤波器"><a href="#Low-pass-filters-低通滤波器" class="headerlink" title="Low-pass filters(低通滤波器)"></a>Low-pass filters(低通滤波器)</h2><p>低通滤波器是噪声最常见的解决方式</p>
+<ul>
+<li>模糊图像或使图像平滑起来</li>
+<li>阻挡特定高频部分</li>
+</ul>
+<p>取相邻像素的均值，从而避免强度突变，特别是小范围突变。（均值过滤器）</p>
+<p>均值过滤器进行了归一化，确保图像不会变亮或者变暗</p>
+<h3 id="高斯模糊"><a href="#高斯模糊" class="headerlink" title="高斯模糊"></a>高斯模糊</h3><ul>
+<li>能模糊图像</li>
+<li>又能更好地保存图像边缘的过滤器</li>
+</ul>
+<p>计算机视觉中最常见的低通过滤器<br>低通过滤器其实就是加权平均法，赋予中心像素最大的权重。周围的像素权重多少主要取决于有多接近中心像素。</p>
+<p><code>cv2.GaussianBlur()</code>执行高斯模糊<br>过滤器的维数需要是奇数，才能将图像的每个像素作为核的中心，过滤器越大模糊的范围越大。</p>
+<h2 id="edge-detection"><a href="#edge-detection" class="headerlink" title="edge detection"></a>edge detection</h2><p>grayscale  –&gt; low-pass filter  –&gt; high-pass filter  –&gt; binary threshold</p>
+<h2 id="canny边缘检测器"><a href="#canny边缘检测器" class="headerlink" title="canny边缘检测器"></a>canny边缘检测器</h2><ol>
+<li>使用高斯模糊过滤掉噪声</li>
+<li>使用Sobel过滤器确定图像边缘的强度与方向</li>
+<li>使用非极大抑制来观察每个检测边缘的强度和方向，选出局部最大像素，从而把最强的边缘绘制成连续的，一个像素宽的细线</li>
+<li><p>使用滞后阈值来分离最佳边缘</p>
+<ul>
+<li>定义一个高阈值，允许强边缘通过</li>
+<li>设置一个低阈值，任何低于该阈值的边缘即为若边缘，会被舍弃</li>
+<li>位于中间的边缘，只有当其与另一个强边缘相连时，才会得到保留</li>
+</ul>
+<p>这样，canny通过滞后阈值删除了若边缘，消除了噪声</p>
+<p>canny适合检测边界和形状</p>
+<p>canny上下限1:2或1:3较合适</p>
+<p><code>cv2.Canny()</code>进行canny检测</p>
+</li>
+</ol>
+<h2 id="线检测（霍夫变换）"><a href="#线检测（霍夫变换）" class="headerlink" title="线检测（霍夫变换）"></a>线检测（霍夫变换）</h2><p>图像空间中: 直线 y=mx+b<br>霍夫空间中: 参数空间<br>但是存在斜率不存在问题，所以使用Hesse法线式表示：  </p>
+<pre><code>r = xcosθ + ysinθ
+</code></pre><p>其中r是原点到直线上最近点的距离，θ是x轴与连接原点和最近点直线之间的夹角。如图1所示。</p>
+<p>这个参数(r,θ)平面有时被称为霍夫空间。</p>
+<p>多个近似在一条直线上的短小的线段转换到霍夫空间后，变为相交的正弦曲线。</p>
+<p><code>cv2.HoughLineP()</code></p>
+<h2 id="Haar-Cascades"><a href="#Haar-Cascades" class="headerlink" title="Haar Cascades"></a>Haar Cascades</h2><p>Haar特征:<br>就是梯度测量值，测量时算法会观察某个特定像素区域周围的矩形区域，以某种方式减去这些区域，从而计算像素差。</p>
+<ul>
+<li>edges</li>
+<li>lines</li>
+<li>rectangle patterns</li>
+</ul>
+<h2 id="Type-of-features"><a href="#Type-of-features" class="headerlink" title="Type of features"></a>Type of features</h2><ol>
+<li>edges(边缘): 高强度梯度区域</li>
+<li>corners(角点): 两个边缘相交的地方</li>
+<li>blobs(斑点): 按特征划分的区域，可能是强度特别高或者特别低的区域，或是具备独特纹理的区域</li>
+</ol>
+<p>角点：可重复性最高的特征</p>
+<h2 id="corner-detections"><a href="#corner-detections" class="headerlink" title="corner detections"></a>corner detections</h2><p>gradient<br>magnitude: 梯度强度的度量值<br>direction: 强度变化的方向</p>
+<ol>
+<li>许多角点检测器会取一个窗口，并在梯度图像不同区域里上下左右移动这个窗口</li>
+<li>检查窗口梯度方向和幅度是否有突变</li>
+</ol>
+<p><code>cv2.cornerHarris()</code></p>
+<p><code>cv2.dilate()</code>膨胀放大明亮的区域</p>
+<h2 id="image-Contours"><a href="#image-Contours" class="headerlink" title="image Contours"></a>image Contours</h2><p>示例中，对一个手掌进行描廓。<br>首先转换为灰度图，然后用逆二进制阈值，把手显示为白色，生成二值图像。<br>然后要找出轮廓，<code>cv2.findContours()</code>，轮廓检索模式（此处使用的是树模式）<br>绘制轮廓，使用<code>cv2.drawContours()</code></p>
+<h2 id="K均值聚类"><a href="#K均值聚类" class="headerlink" title="K均值聚类"></a>K均值聚类</h2><p>Separates an image into segments by clustering data points that have similar traits.</p>
+<ol>
+<li>随机选择k个中心点</li>
+<li>把各像素值赋给最近的中心点所在的簇</li>
+<li>然后K均值会分别取各簇所有RGB值的实际平均数，然后将三个中心点更新为相对应的均值</li>
+<li>重复这个过程，根据调整后的新中心点，形成新簇，然后再次计算簇均值，更新中心点。直到收敛。</li>
+</ol>
+<p><code>cv2.kmeans()</code></p>
+
       
     </div>
 
@@ -522,7 +564,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/计算机网络/" rel="tag"><i class="fa fa-tag"></i> 计算机网络</a>
+            <a href="/tags/计算机视觉/" rel="tag"><i class="fa fa-tag"></i> 计算机视觉</a>
+          
+            <a href="/tags/深度学习/" rel="tag"><i class="fa fa-tag"></i> 深度学习</a>
           
         </div>
       
@@ -535,15 +579,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/03/24/手机快充技术整理/" rel="next" title="手机快充技术整理">
+                <i class="fa fa-chevron-left"></i> 手机快充技术整理
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/22/测试文章/" rel="prev" title="测试文章">
-                测试文章 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -726,7 +770,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#FTP协议"><span class="nav-number">1.</span> <span class="nav-text">FTP协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#协议格式"><span class="nav-number">1.1.</span> <span class="nav-text">协议格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#控制连接报文格式"><span class="nav-number">1.1.1.</span> <span class="nav-text">控制连接报文格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通讯过程"><span class="nav-number">1.2.</span> <span class="nav-text">通讯过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">1.3.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机视觉"><span class="nav-number">1.</span> <span class="nav-text">计算机视觉</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础"><span class="nav-number">1.1.</span> <span class="nav-text">基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Pipeline"><span class="nav-number">1.1.1.</span> <span class="nav-text">Pipeline</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#color-threshold"><span class="nav-number">1.2.</span> <span class="nav-text">color threshold</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#High-pass-filter-高通滤波器"><span class="nav-number">1.3.</span> <span class="nav-text">High-pass filter(高通滤波器)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Low-pass-filters-低通滤波器"><span class="nav-number">1.4.</span> <span class="nav-text">Low-pass filters(低通滤波器)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#高斯模糊"><span class="nav-number">1.4.1.</span> <span class="nav-text">高斯模糊</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#edge-detection"><span class="nav-number">1.5.</span> <span class="nav-text">edge detection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#canny边缘检测器"><span class="nav-number">1.6.</span> <span class="nav-text">canny边缘检测器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线检测（霍夫变换）"><span class="nav-number">1.7.</span> <span class="nav-text">线检测（霍夫变换）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Haar-Cascades"><span class="nav-number">1.8.</span> <span class="nav-text">Haar Cascades</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Type-of-features"><span class="nav-number">1.9.</span> <span class="nav-text">Type of features</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#corner-detections"><span class="nav-number">1.10.</span> <span class="nav-text">corner detections</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#image-Contours"><span class="nav-number">1.11.</span> <span class="nav-text">image Contours</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#K均值聚类"><span class="nav-number">1.12.</span> <span class="nav-text">K均值聚类</span></a></li></ol></li></ol></div>
             
 
           </div>
