@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://duolk.gitee.io/"/>
-  <updated>2019-03-25T12:15:34.034Z</updated>
+  <updated>2019-03-29T15:28:45.592Z</updated>
   <id>https://duolk.gitee.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>孤独游戏</title>
+    <link href="https://duolk.gitee.io/2019/03/29/%E5%AD%A4%E7%8B%AC%E6%B8%B8%E6%88%8F/"/>
+    <id>https://duolk.gitee.io/2019/03/29/孤独游戏/</id>
+    <published>2019-03-29T15:27:23.000Z</published>
+    <updated>2019-03-29T15:28:45.592Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;我无法承受孤独，而我又在逐渐地孤立自己，用别人的幸福感来惩罚自己，又将怨恨归
+      
+    
+    </summary>
+    
+      <category term="个人日记" scheme="https://duolk.gitee.io/categories/%E4%B8%AA%E4%BA%BA%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>计算机视觉入门(一)</title>
