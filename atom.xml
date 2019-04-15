@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://duolk.gitee.io/"/>
-  <updated>2019-04-08T13:45:54.697Z</updated>
+  <updated>2019-04-15T12:14:10.303Z</updated>
   <id>https://duolk.gitee.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决win10搜索栏一片空白问题</title>
+    <link href="https://duolk.gitee.io/2019/04/15/%E8%A7%A3%E5%86%B3win10%E6%90%9C%E7%B4%A2%E6%A0%8F%E4%B8%80%E7%89%87%E7%A9%BA%E7%99%BD%E9%97%AE%E9%A2%98/"/>
+    <id>https://duolk.gitee.io/2019/04/15/解决win10搜索栏一片空白问题/</id>
+    <published>2019-04-15T12:08:08.000Z</published>
+    <updated>2019-04-15T12:14:10.303Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;用管理员打开系统CMD，输入&lt;/p&gt;
+&lt;figure class=&quot;high
+      
+    
+    </summary>
+    
+      <category term="问题技巧" scheme="https://duolk.gitee.io/categories/%E9%97%AE%E9%A2%98%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="windows" scheme="https://duolk.gitee.io/tags/windows/"/>
+    
+  </entry>
   
   <entry>
     <title>清明节野餐</title>
