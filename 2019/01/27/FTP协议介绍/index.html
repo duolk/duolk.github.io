@@ -16,7 +16,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -174,7 +174,7 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -185,7 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -459,6 +459,7 @@
 <p>FTP命令根据功能可分为三类：<br>1）    访问控制命令<br>用以指定访问控制标识符。<br>2）    传输参数命令<br>用以更改传输参数的默认值，所有传输参数都具有默认值。<br>3）    FTP服务命令<br>定义文件传输或用户请求的文件系统功能。<br>具体单个指令的功能释义可参见RFC 0959（<a href="https://tools.ietf.org/html/rfc959）。" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc959）。</a></p>
 <p>每个FTP命令都会生成至少一个回复，控制连接的回复报文格式：<br>由三位数字（传输为三个字母数字字符）和一些文本组成。<br>xyz  <sp>  <some-text-information>  <crlf><br>在文本过长超过一行最大值时，会产生多行回复：<br>多行回复的格式是第一行将以确切的所需回复代码开头，紧接着是连字符，“-”（也称为Minus），后跟文本。最后一行将以相同的代码开头，紧接着是Space <sp>，可选的是一些文本，以及Telnet行尾代码。<br>注意：以三个数字和一个Space开头的行应该被一些中性文本（如Space）偏移。<br>例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">123-First line</span><br><span class="line">Second line</span><br><span class="line">  234 A line beginning with numbers</span><br><span class="line">123 The last line</span><br></pre></td></tr></table></figure></sp></crlf></some-text-information></sp></p>
 <p>三位响应码包含了回复报文的足够信息，其分类意义如下：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -495,11 +496,12 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>响应码细化分类的表示意义参见RFC 0959（<a href="https://tools.ietf.org/html/rfc959）。" target="_blank" rel="noopener">https://tools.ietf.org/html/rfc959）。</a></p>
 <h2 id="通讯过程"><a href="#通讯过程" class="headerlink" title="通讯过程"></a>通讯过程</h2><img src="/2019/01/27/FTP协议介绍/3.png" title="FTP模型">
 <p>FTP协议<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Postel, Jon, and Joyce Reynolds. 'Rfc 959: File transfer protocol (ftp).' InterNet Network Working Group (1985).
 ">[1]</span></a></sup>的通讯过程由图1中的FTP模型给出，首先由User-PI启动控制连接（控制连接遵循Telnet协议），用户启动时，标准FTP命令由User-PI生成，并通过控制连接传输到服务器进程。标准回复由Server-PI通过控制连接发送给User-PI来响应FTP命令。<br>文件仅通过数据连接传输。控制连接用于传输执行功能的命令，以及对这些命令的回复。数据传输一般有两种模式，分为主动模式和被动模式：<br>主动模式下的FTP客户端首先和FTP服务器的TCP 21端口建立控制连接，通过这个连接发送命令，客户端需要接受数据的时候会在这个通道上发送PORT命令。PORT命令包含了客户端用什么端口接收数据。在传送数据的时候，服务器端通过自己的TCP 20端口连接至客户端的指定端口发送数据。FTP server必须和客户端建立一个新的连接用来传送数据。<br>被动模式在建立控制连接的时候和主动模式很类似，但建立连接后发送的不是PORT命令，而是PASV命令。FTP服务器收到PASV命令后，随机打开一个高端端口（端口号大于1024）并且通知客户端在这个端口上传送数据的请求，客户端连接FTP服务器的这个端口，然后FTP服务器将通过这个端口进行数据的传送，这个时候FTP服务器不再需要建立一个新的和客户端之间的连接。<br>注意在数据连接中，数据的连接可以是任意方向的，并且数据连接在整个控制连接期间，不需要保持一直开启。</p>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Postel, Jon, and Joyce Reynolds. ‘Rfc 959: File transfer protocol (ftp).’ InterNet Network Working Group (1985).<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Postel, Jon, and Joyce Reynolds. 'Rfc 959: File transfer protocol (ftp).' InterNet Network Working Group (1985).<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
       
     </div>
 
@@ -610,7 +612,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -672,7 +674,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -872,7 +876,7 @@
   
 
 
-  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+  <script src="/js/src/next-boot.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
   
@@ -895,6 +899,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
   
 

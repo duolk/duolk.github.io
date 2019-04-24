@@ -16,7 +16,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -170,7 +170,7 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -181,7 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -461,7 +461,7 @@
 <p>shell是一种命令行解释器，第一个单词不是命令，就是可执行文件。</p>
 <p>总线，I/O设备，主存，处理器</p>
 <p>CPU：<br>程序计数器：指向某条机器语言指令<br>寄存器文件：小的存储设备</p>
-<p>加载：主存-&gt;寄存器<br>存储：寄存器-&gt;主存<br>更新：寄存器-&gt;ALU-&gt;寄存器<br>I/O读，I/O写：寄存器<->I/O设备<br>转移：指令-&gt;程序计数器</-></p>
+<p>加载：主存-&gt;寄存器<br>存储：寄存器-&gt;主存<br>更新：寄存器-&gt;ALU-&gt;寄存器<br>I/O读，I/O写：寄存器&lt;-&gt;I/O设备<br>转移：指令-&gt;程序计数器</p>
 <h4 id="执行hello程序"><a href="#执行hello程序" class="headerlink" title="执行hello程序"></a>执行hello程序</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> ./hello</span><br></pre></td></tr></table></figure>
 <ul>
 <li>shell程序逐一读取字符到寄存器，再把它存放在主存中</li>
@@ -480,6 +480,7 @@
 <p>网络也是一种I/O设备</p>
 <h3 id="第二章：信息的表示与处理"><a href="#第二章：信息的表示与处理" class="headerlink" title="第二章：信息的表示与处理"></a>第二章：信息的表示与处理</h3><p>信息存储中，8位称为一个字节，按字节寻址。</p>
 <p>使用十六进制表示法表示字节（0x00-0xFF）<br>字长和虚拟空间地址大小的关系。 </p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -526,6 +527,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <p>大端小端之争<br>字符串无大小端问题</p>
 <p>sizeof(T)返回存储一个类型为T的对象所需要的字节数。</p>
 <p>无符号，有符号，二进制补码</p>
@@ -650,7 +652,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -712,7 +714,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -912,7 +916,7 @@
   
 
 
-  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+  <script src="/js/src/next-boot.js?v=7.0.1"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
   
@@ -935,6 +939,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
   
 

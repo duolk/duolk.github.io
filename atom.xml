@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://duolk.gitee.io/"/>
-  <updated>2019-04-15T12:14:10.303Z</updated>
+  <updated>2019-04-24T02:51:16.395Z</updated>
   <id>https://duolk.gitee.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>矩阵求导术</title>
+    <link href="https://duolk.gitee.io/2019/04/24/%E7%9F%A9%E9%98%B5%E6%B1%82%E5%AF%BC%E6%9C%AF/"/>
+    <id>https://duolk.gitee.io/2019/04/24/矩阵求导术/</id>
+    <published>2019-04-24T02:12:23.000Z</published>
+    <updated>2019-04-24T02:51:16.395Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h1 id=&quot;矩阵求导术&quot;&gt;&lt;a href=&quot;#矩阵求导术&quot; class=&quot;he
+      
+    
+    </summary>
+    
+      <category term="知识科普" scheme="https://duolk.gitee.io/categories/%E7%9F%A5%E8%AF%86%E7%A7%91%E6%99%AE/"/>
+    
+    
+      <category term="线性代数" scheme="https://duolk.gitee.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>解决win10搜索栏一片空白问题</title>
